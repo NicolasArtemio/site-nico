@@ -165,14 +165,40 @@ body {
     align-items: center;
     justify-content: center;
   }
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  padding: 1rem 0 0 0;
-}
-.projects{
-  margin: 2rem 0 0 0;
-}
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem 0 0 0;
+  }
+  .projects{
+    margin: 2rem 0 0 0;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+    padding: 1rem 2rem; 
+  }
+
+  .card-project {
+    background-color: #D9D9D9; /* para que se vea algo */
+    width: 150px;
+    height: 100px; /* tamaño de ejemplo */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .contact-container {
+    margin: 2rem 0 2rem 0;
+    padding: 0 1rem;
+  }
+
+  .card-contact {
+    padding: 1.2rem 1.2rem;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.2rem;
+  }
 }
