@@ -98,8 +98,13 @@ body {
     max-height: 100vh;
     z-index: -1;
     filter: brightness(45%);
+    filter: blur(10px);
+    transition: filter 0.3s ease-out;
   }
 
+  .hero-image.lazyloaded {
+    filter: blur(0);
+  }
 
   .btn-primary {
     display: block;
