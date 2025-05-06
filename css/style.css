@@ -1,0 +1,120 @@
+/* fonts */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #FFF5F5;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .header-content {
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  .line {
+    height: 2px;
+    background-color: #006CA2;
+    margin: 0 0 0 0.5rem;
+    width: 12.5rem;
+  }
+  .text-logo-container {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: -0.8rem 0 0 0.5rem;
+    color: #006CA2;
+  }
+
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: -0.6rem 0 0 0;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    background-color: #006CA2;
+    max-width: 100%;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  .nav-list li {
+    margin: 0 0.5rem;
+  }
+
+  .nav-list li a {
+    text-decoration: none;
+    color: #FFFF; 
+    font-weight: 500;
+  }
+
+  .hero-content {
+    position: relative;
+  }
+
+  .text-hero  {
+    color: #FFFF;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .parrafo-hero {
+    color: #FFFF;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .location-container {
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;          
+    margin: -0.8rem 0 0 7rem;
+  }
+  .hero-image {
+    position: absolute;
+    left: 0;
+    top: -1.4rem;
+    max-width: 100%;
+    max-height: 100vh;
+    z-index: -1;
+    filter: brightness(45%);
+  }
+
+
+  .btn-primary {
+    display: block;
+    margin: 1rem auto; /* centra horizontalmente */
+    padding: 0.75rem 1.5rem;
+    background-color: #1188F8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #00517f;
+  }
+}
