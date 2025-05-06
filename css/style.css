@@ -201,4 +201,23 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 0.2rem;
   }
+
+  .line-footer {
+    height: 0.6rem;
+    background-color: #006CA2;
+  }
+
+  .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  .container-footer h2{
+    font-size: 1rem;
+  }
+  .container-footer img{
+    width: 130px;
+  }
 }
