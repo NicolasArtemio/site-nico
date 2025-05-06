@@ -27,6 +27,10 @@
   .uppercase {
     text-transform: uppercase;
   }
+
+  .py-2{
+    padding: 1rem 0 0 0;
+  }
   
 body {
   padding: 0;
@@ -155,4 +159,16 @@ body {
   .services {
     box-shadow:  4px 8px rgba(0, 0, 0, 0.2)
   }
+
+  .section-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
 }
