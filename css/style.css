@@ -21,6 +21,9 @@
     text-align: center;
   }
 
+  .text-primary {
+    color: #006CA2;
+  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -29,7 +32,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #d9d9d9;
+  background-color: #FFF5F5;
 }
 
 /* mobile */
@@ -135,5 +138,21 @@ body {
   .item {
     max-width: 100%;
     height: 250px;
+  }
+
+  .title-service {
+    padding-top: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+    margin: -0.2rem 0 0 0;
+  }
+  .card p {
+    padding: 0 1.3rem 0 1.3rem;
+  }
+
+  .services {
+    box-shadow:  4px 8px rgba(0, 0, 0, 0.2)
   }
 }
