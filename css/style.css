@@ -220,6 +220,28 @@ body {
     width: 130px;
   }
 
+  .sticky-wrapper {
+    position: relative;
+  }
+  
+  .sticky-img {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 80vh;
+    object-fit: contain;
+    z-index: -1;
+  }
+  
+  /* Contenido encima */
+  .projects,
+  .contact-container {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.95); /* opcional */
+  }
+}
+
   /* tablet */
   @media (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) {}
-}
