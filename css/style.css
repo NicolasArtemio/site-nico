@@ -603,6 +603,10 @@ body {
     margin: 2rem 0 0 0;
   }
 
+  .projects h3 {
+    font-size: 1.6rem;
+  }
+
   .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
@@ -627,6 +631,8 @@ body {
     padding: 1.2rem 1.2rem;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin: 3rem auto;
     border-radius: 0.2rem;
   }
 
@@ -681,15 +687,29 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
     gap: 1rem;
-    padding: 1rem 6rem;
     margin: 0 auto;
+  }
+
+    .projects h3 {
+    font-size: 1.8rem;
   }
 
   .card-project {
     background-color: #D9D9D9;
+    width: auto;
     height: 350px;
     border: 1px solid #ccc;
     border-radius: 4px;
+  }
+
+
+  .card-contact {
+    padding: 1.2rem 1.2rem;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 650px;
+    margin: 3rem auto;
+    border-radius: 0.2rem;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -703,6 +723,34 @@ body {
 }
 
 @media only screen and (min-width: 1920px) {
+    .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 0 6rem;
+
+  }
+
+  .projects h3 {
+    font-size: 2rem;
+  }
+
+    .card-project {
+    background-color: #D9D9D9;
+    width: auto;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .card-contact {
+    padding: 1.2rem 1.2rem;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 850px;
+    margin: 3rem auto;
+    border-radius: 0.2rem;
+  }
 
     .sticky-wrapper {
     position: relative;
@@ -725,6 +773,7 @@ body {
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.95);
   }
+
 
 
 }
