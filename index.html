@@ -16,7 +16,7 @@
         <div class="header-content">
           <!-- Logo -->
           <div class="logo-container">
-            <img class="logo" src="assets/updatelogo.webp" alt="logo" width="230" height="80"  loading="lazy"/>
+              <img class="logo" src="assets/updatelogo.webp" alt="logo" width="230" height="80"  loading="lazy"/>
           </div>
       
           <!-- Línea separadora -->
@@ -41,18 +41,22 @@
         </nav>
       </header>
       <main>
-        <section class="hero">
-          <div class="hero-content">
-            <h2 class="text-hero poppins-bold">Diseño y Desarrollo Web</h2>
-      
-            <div class="location-container">
-              <img class="hero-image-icon" src="assets/icon-location.png" alt="Icono ubicación" />
-              <p class="parrafo-hero poppins-semibold">Olavarria, Buenos Aires</p>
-            </div>
-            <img class="hero-image" src="assets/bg-hero.webp" alt="Hero Image" loading="lazy"/>
-            <button class="btn-primary poppins-bold uppercase">CONTACTAR</button>
+      <section class="hero">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="assets/bg-desktop.webp" />
+          <img class="hero-image" src="assets/bg-hero.webp" alt="Hero Image" loading="lazy" />
+        </picture>
+
+        <div class="hero-content">
+          <h2 class="text-hero poppins-bold">Diseño y Desarrollo Web</h2>
+          <div class="location-container">
+            <img class="hero-image-icon" src="assets/icon-location.png" alt="Icono ubicación" />
+            <p class="parrafo-hero poppins-semibold">Olavarria, Buenos Aires</p>
           </div>
-        </section>
+          <button class="btn-primary poppins-bold uppercase">CONTACTAR</button>
+        </div>
+      </section>
+
         <section class="services">
           <h2 class="text-center poppins-bold title-service"> Mis Servicios</h2>
            <div class="cards-container">
@@ -85,6 +89,7 @@
         <div class="sticky-wrapper">
           <picture>
              <source media="(min-width: 600px)" srcset="assets/bg-skill-tablet.png">
+             <source media="(min-width: 1920px)" srcset="assets/bg-skill-max.png">
             <img src="assets/bg-skills.png" alt="skills" class="sticky-img">
           </picture>
           
