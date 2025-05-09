@@ -52,7 +52,7 @@ body {
     transform: translateX(-50%);
     width:599px;
     z-index: 1000;
-    background-color: white; /* Asegúrate de ponerle fondo para que no se vea contenido detrás */
+    background-color: #FFFFFF; /* Asegúrate de ponerle fondo para que no se vea contenido detrás */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional, para darle sombra */
   }
 
@@ -98,7 +98,7 @@ body {
 
   .nav-list li a {
     text-decoration: none;
-    color: #FFFF; 
+    color: #FFFFFF; 
     font-weight: 500;
   }
 
@@ -108,13 +108,13 @@ body {
   }
 
   .text-hero  {
-    color: #FFFF;
+    color: #FFFFFF;
     text-align: center;
     padding-top: 1rem;
   }
 
   .parrafo-hero {
-    color: #FFFF;
+    color: #FFFFFF;
     padding-top: 1rem;
     font-size: 0.8rem;
   }
@@ -156,7 +156,7 @@ body {
   }
 
   .services{
-    background-color: #FFFF;
+    background-color: #FFFFFF;
   }
 
   .item {
@@ -307,7 +307,7 @@ body {
 
   .nav-list li a {
     text-decoration: none;
-    color: #FFFF; 
+    color: #FFFFFF; 
     font-weight: 500;
   }
 
@@ -318,14 +318,14 @@ body {
   }
 
   .text-hero {
-    color: #FFFF;
+    color: #FFFFFF;
     text-align: center;
     padding-top: 3rem;
     font-size: 2rem;
   }
 
   .parrafo-hero {
-    color: #FFFF;
+    color: #FFFFFF;
     padding-top: 1rem;
     font-size: 1.2rem;
   }
@@ -368,7 +368,7 @@ body {
   }
 
   .services {
-    background-color: #FFFF;
+    background-color: #FFFFFF;
   }
 
   .item {
@@ -523,7 +523,7 @@ body {
 
   .nav-list li a {
     text-decoration: none;
-    color: #FFFF; 
+    color: #FFFFFF; 
     font-weight: 500;
   }
 
@@ -534,14 +534,14 @@ body {
   }
 
   .text-hero  {
-    color: #FFFF;
+    color: #FFFFFF;
     text-align: center;
     font-size: 2rem;
     padding-top: 1.3rem;
   }
 
   .parrafo-hero {
-    color: #FFFF;
+    color: #FFFFFF;
     padding-top: 1rem;
     font-size: 1rem;
   }
@@ -584,7 +584,7 @@ body {
   }
 
     .services {
-    background-color: #FFFF;
+    background-color: ;
     height: 450px;
   }
 
@@ -719,8 +719,8 @@ body {
     transform: translateX(-50%);
     width:1280px;
     z-index: 1000;
-    background-color: white; /* Asegúrate de ponerle fondo para que no se vea contenido detrás */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional, para darle sombra */
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
 
   main {
@@ -778,8 +778,8 @@ body {
     transform: translateX(-50%);
     width:1440px;
     z-index: 1000;
-    background-color: white; /* Asegúrate de ponerle fondo para que no se vea contenido detrás */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional, para darle sombra */
+    background-color: #FFFFFF; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
 
   main {
