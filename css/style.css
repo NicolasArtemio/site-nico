@@ -31,7 +31,30 @@
 .py-2{
   padding: 1rem 0 0 0;
 }
-  
+ 
+/** styles modal **/
+.container-modal {
+  position: fixed; 
+  inset: 0; 
+  width: 100vw; /* Corregido: ancho de la ventana */
+  height: 100dvh; /* OK, alto dinámico en dispositivos modernos */
+  margin: auto;
+  z-index: 1000;
+  background-color: #fff; /* Agrega si aún no lo ves */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.bg-white {
+  background-color: #FFFFFF;
+}
 body {
   padding: 0;
   margin: 0;

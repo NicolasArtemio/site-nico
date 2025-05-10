@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Nicosolutionweb</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "gTcTa5BevU1P5UD-C",
+          });
+      })();
+    </script>
   </head>
   <body>
     <div id="app">
@@ -54,7 +64,8 @@
             <img class="hero-image-icon" src="assets/icon-location.png" alt="Icono ubicación" />
             <p class="parrafo-hero poppins-semibold">Olavarria, Buenos Aires</p>
           </div>
-          <button class="btn-primary poppins-bold uppercase">CONTACTAR</button>
+           <button id="btn-contact" class="btn-primary poppins-bold uppercase">CONTACTAR</button>
+
         </div>
       </section>
 
@@ -111,7 +122,7 @@
               <p class="text-center poppins-regular">
                 Si tenés una idea, un proyecto o simplemente querés saber más sobre lo que hago, escribime. Estoy para ayudarte.
               </p>
-              <button class="btn-primary poppins-bold uppercase">Contactar</button>
+              <button id="btn-contact2" class="btn-primary poppins-bold uppercase">Contactar</button>
             </div>
           </section>
         </div>
@@ -123,5 +134,7 @@
           <img src="assets/updatelogo.webp" alt="logo">
         </div>
       </footer>
+    </div>
+    <script type="module" src="src/app.js"></script>
   </body>
 </html>
