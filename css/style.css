@@ -43,6 +43,93 @@ body {
   background-color: #FFF5F5;
 }
 
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Modal title */
+.modal-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Container for inputs */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input fields */
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Textarea field */
+.textarea-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100px;
+    transition: border-color 0.3s;
+}
+
+.textarea-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button */
+.btn-submit {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
 /* mobile */
 @media only screen and (max-width: 599px) {
   .header-content {
@@ -61,25 +148,23 @@ body {
   }
 
     /** styles modal **/
-  .container-modal {
-    position: fixed; 
-    inset: 0; 
-    width: 100vw; 
-    height: 100dvh; 
-    margin: auto;
-    z-index: 1000;
-    background-color: #ffffff; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-  }
+ .modal-container {
+        width: 90%;
+        padding: 15px;
+    }
 
-  .container-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
+    .modal-title {
+        font-size: 20px;
+    }
+
+    .input-field,
+    .textarea-field {
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
 
   .logo-container {
     margin-left: 7.5rem;
@@ -537,26 +622,24 @@ body {
       margin: 0.5rem 0 0 0.5rem;
     }
 
-        /** styles modal **/
-    .container-modal {
-      position: fixed; 
-      inset: 0; 
-      max-width: 600px; 
-      height: 400px;
-      margin: auto;
-      z-index: 1000;
-      background-color: #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
-      overflow: hidden;
-    }
+    .modal-container {
+          max-width: 700px;
+          padding: 30px;
+      }
 
-  .container-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
+      .modal-title {
+          font-size: 28px;
+      }
+
+      .input-field,
+      .textarea-field {
+          font-size: 18px;
+      }
+
+      .btn-submit {
+          font-size: 18px;
+          padding: 16px;
+      }
   .line {
     height: 2px;
     background-color: #006CA2;
@@ -790,24 +873,23 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
 
-      .container-modal {
-      position: fixed; 
-      inset: 0; 
-      max-width: 600px; 
-      height: 400px;
-      margin: auto;
-      z-index: 1000;
-      background-color: #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
-      overflow: hidden;
+    .modal-container {
+        max-width: 800px;
+        padding: 35px;
     }
 
-    .container-inputs {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
+    .modal-title {
+        font-size: 30px;
+    }
+
+    .input-field,
+    .textarea-field {
+        font-size: 19px;
+    }
+
+    .btn-submit {
+        font-size: 19px;
+        padding: 18px;
     }
 
 
@@ -870,24 +952,23 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
 
-      .container-modal {
-      position: fixed; 
-      inset: 0; 
-      max-width: 600px; 
-      height: 400px;
-      margin: auto;
-      z-index: 1000;
-      background-color: #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
-      overflow: hidden;
+     .modal-container {
+        max-width: 850px;
+        padding: 40px;
     }
 
-    .container-inputs {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
+    .modal-title {
+        font-size: 32px;
+    }
+
+    .input-field,
+    .textarea-field {
+        font-size: 20px;
+    }
+
+    .btn-submit {
+        font-size: 20px;
+        padding: 20px;
     }
 
   main {
@@ -895,6 +976,25 @@ body {
   }
 }
 @media only screen and (min-width: 1920px) {
+
+      .modal-container {
+          max-width: 900px;
+          padding: 45px;
+      }
+
+      .modal-title {
+          font-size: 34px;
+      }
+
+      .input-field,
+      .textarea-field {
+          font-size: 21px;
+      }
+
+      .btn-submit {
+          font-size: 21px;
+          padding: 22px;
+      }
     .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
