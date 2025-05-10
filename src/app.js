@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded",() => {
             from_email: email,
             subject: subject, // Asunto dinámico
             message: message,
+            to_email: "no-reply@nicosolutionweb.com.ar" 
         };
 
         emailjs.send("service_heiramg", "template_2qpstft", templateParams)
