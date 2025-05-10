@@ -50,49 +50,48 @@ document.addEventListener("DOMContentLoaded", () => {
             divApp.removeChild(containerMain);
         });
 
-        btnSubmit.addEventListener("click", async (e) => {
-            e.preventDefault();
+       btnSubmit.addEventListener("click", async (e) => {
+        e.preventDefault();
 
-            const name = inputName.value;
-            const email = inputEmail.value;
-            const subject = inputSubject.value;
-            const message = inputMessage.value;
+        const name = inputName.value.trim();
+        const email = inputEmail.value.trim();
+        const subject = inputSubject.value.trim();
+        const message = inputMessage.value.trim();
 
-            // Validación de campos
-            if (name === "" || email === "" ||  subject === "" || message === "" ) {
-                alert("Por favor completa todos los campos");
-                return;
-            }
+        if (!name || !email || !subject || !message) {
+            alert("Por favor completa todos los campos");
+            return;
+        }
 
-            // Validación de correo electrónico
-            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-            if (!emailPattern.test(email)) {
-                alert("Por favor ingresa un correo electrónico válido.");
-                return;
-            }
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+            alert("Por favor ingresa un correo electrónico válido.");
+            return;
+        }
 
-            // Enviar los datos del formulario a través de EmailJS
-            const templateParams = {
-                from_name: name,        
-                from_email: email,      
-                subject: subject,      
-                message: message        
-            };
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: message
+        };
 
+        btnSubmit.disabled = true;
+        btnSubmit.innerText = "Enviando...";
 
-            emailjs.send("service_heiramg", "template_2qpstft", templateParams)
-                            try {
-                const response = await emailjs.send("service_heiramg", "template_2qpstft", templateParams);
-                    alert(`Gracias ${name}, tu mensaje ha sido enviado`);
-                    divApp.removeChild(containerMain);
-                } catch (error) {
-                    alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
-                    console.error("EmailJS error:", error);
-                } finally {
-                    btnSubmit.disabled = false;
-                    btnSubmit.innerText = "Enviar";
-    }
-        });
+        try {
+            const response = await emailjs.send("service_heiramg", "template_2qpstft", templateParams);
+            alert(`Gracias ${name}, tu mensaje ha sido enviado`);
+            divApp.removeChild(containerMain);
+        } catch (error) {
+            alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
+            console.error("EmailJS error:", error);
+        } finally {
+            btnSubmit.disabled = false;
+            btnSubmit.innerText = "Enviar";
+        }
+    });
+
     };
 
 
