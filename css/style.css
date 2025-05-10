@@ -1,3 +1,16 @@
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FFF5F5;
+  }
+.anchor-section {
+  scroll-margin-top: 12rem;
+}
+
 /* fonts */
 .poppins-regular {
   font-family: "Poppins", sans-serif;
@@ -36,12 +49,8 @@
 .bg-white {
   background-color: #FFFFFF;
 }
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: #FFF5F5;
-}
+
+
 
 .modal-container {
     position: fixed;
@@ -696,7 +705,6 @@ body {
     align-items: center;
     justify-content: center;
     list-style: none;
-    padding: 1rem 0;
     margin: -0.6rem 0 0 0;
     flex-wrap: wrap;
     font-size: 1rem;
@@ -707,6 +715,12 @@ body {
 
   .nav-list li {
     margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+     transition: background-color 0.3s ease;
+  }
+
+    .nav-list li:hover {
+        background-color: #00527F;
   }
 
   .nav-list li a {
@@ -1014,6 +1028,12 @@ body {
   }
 }
 @media only screen and (min-width: 1920px) {
+
+
+      .sticky-img {
+        width: 100%;
+        display: block;
+      }
 
       .modal-container {
           max-width: 900px;

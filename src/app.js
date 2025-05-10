@@ -84,7 +84,7 @@ const openModal = () => {
     formContact.classList.add("contact-form");
 
     const title = document.createElement("H2");
-    title.innerText = "Contáctanos";
+    title.innerText = "Contáctame";
     title.classList.add("modal-title");
 
     formContact.appendChild(title);
