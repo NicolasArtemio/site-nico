@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const name = inputName.value;
             const email = inputEmail.value;
-            const message = inputMessage.value;
             const subject = inputSubject.value;
+            const message = inputMessage.value;
 
             // Validación de campos
-            if (name === "" || email === "" || message === "" || subject === "") {
+            if (name === "" || email === "" ||  subject === "" || message === "" ) {
                 alert("Por favor completa todos los campos");
                 return;
             }
@@ -72,12 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Enviar los datos del formulario a través de EmailJS
             const templateParams = {
-                from_name: name,
-                from_email: email,
-                subject: subject, // Asunto dinámico
-                message: message,
-                email: "no-reply@nicosolutionweb.com.ar"
+                from_name: name,        // nombre ingresado por el usuario
+                from_email: email,      // email ingresado por el usuario
+                subject: subject,       // asunto ingresado
+                message: message        // mensaje escrito
             };
+
 
             emailjs.send("service_heiramg", "template_2qpstft", templateParams)
                 .then(function (response) {
