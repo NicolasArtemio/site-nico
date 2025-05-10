@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /** Mostrar modal de mensaje */
         const showMessageModal = (message) => {
+            
         // Verifica si ya existe un modal previo y lo elimina
         const existingModal = document.getElementById("response-modal");
         if (existingModal) existingModal.remove();
@@ -55,8 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Eliminar el mensaje de error después de 3 segundos
         setTimeout(() => {
             error.remove();
-            inputElement.classList.remove('input-error');  // Elimina el borde rojo después de 3 segundos
-        }, 3000);  // 3000 milisegundos = 3 segundos
+            inputElement.classList.remove('input-error');  
+        }, 3000);  
     }
 
     const validateField = (inputElement, condition, errorMessage) => {
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             showFieldError(inputElement, errorMessage);
             return false;
         }
-        inputElement.classList.remove('input-error'); // Si pasa la validación, elimina el borde rojo
+        inputElement.classList.remove('input-error');
         return true;
     }
 
