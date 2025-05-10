@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnContact = document.getElementById('btn-contact2');
     const divApp = document.getElementById("app");
 
+    /* Función para abrir el modal */
     const openModal = () => {
         const containerMain = document.createElement("DIV");
         containerMain.classList.add("bg-white", "container-modal");
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             divApp.removeChild(containerMain);
         });
 
-        btnSubmit.addEventListener("click", (e) => {
+        btnSubmit.addEventListener("click", async (e) => {
             e.preventDefault();
 
             const name = inputName.value;
@@ -72,21 +73,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Enviar los datos del formulario a través de EmailJS
             const templateParams = {
-                from_name: name,        // nombre ingresado por el usuario
-                from_email: email,      // email ingresado por el usuario
-                subject: subject,       // asunto ingresado
-                message: message        // mensaje escrito
+                from_name: name,        
+                from_email: email,      
+                subject: subject,      
+                message: message        
             };
 
 
             emailjs.send("service_heiramg", "template_2qpstft", templateParams)
-                .then(function (response) {
+                            try {
+                const response = await emailjs.send("service_heiramg", "template_2qpstft", templateParams);
                     alert(`Gracias ${name}, tu mensaje ha sido enviado`);
                     divApp.removeChild(containerMain);
-                }, function (error) {
+                } catch (error) {
                     alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
                     console.error("EmailJS error:", error);
-                });
+                } finally {
+                    btnSubmit.disabled = false;
+                    btnSubmit.innerText = "Enviar";
+    }
         });
     };
 
